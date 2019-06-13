@@ -15,6 +15,6 @@ The configuration pre-installed are:
   Use the Gatsby CLI to create a new site, specifying this starter.
 
   ```sh
-  # create a new Gatsby site using the default starter
+  # create a new Gatsby site this default starter
   gatsby new my-site https://github.com/leo-sgruz/gatsby-starter-empty
   ```
