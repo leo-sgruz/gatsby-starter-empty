@@ -1,4 +1,10 @@
-module.exports = {
+let activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
+
+
+var configuration = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -32,3 +38,10 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+//if path_prefix is empty, it must not be in the configuration
+if(process.env.GATSBY_URL_PATH_PREFIX !== "") {
+  configuration.pathPrefix = process.env.GATSBY_URL_PATH_PREFIX;
+}
+
+module.exports = configuration;
