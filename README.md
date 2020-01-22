@@ -6,7 +6,7 @@ The configuration pre-installed are:
 
 * sass ([gatsby-plugin-sass](https://www.gatsbyjs.org/packages/gatsby-plugin-sass/))
 * sitemap.xml generation ([gatsby-plugin-sitemap](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/))
-* multiple environment ((gatsby environment)[https://www.gatsbyjs.org/docs/environment-variables/])
+* multiple environment ([gatsby environment](https://www.gatsbyjs.org/docs/environment-variables/))
 * githuub page automatic deploy with `npm run deploy-beta` (github pages must be configurated in the repository settings) ([gh-pages](https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/))
 
 
